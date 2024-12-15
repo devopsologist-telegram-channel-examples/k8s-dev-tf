@@ -39,7 +39,7 @@ resource "proxmox_vm_qemu" "k8s-master" {
     scsi {
       scsi0 {
         disk {
-          size     = "20G"
+          size     = "40G"
           storage  = "local"
           iothread = true
         }
@@ -90,7 +90,7 @@ resource "proxmox_vm_qemu" "k8s-worker" {
     scsi {
       scsi0 {
         disk {
-          size     = "20G"
+          size     = "40G"
           storage  = "local"
           iothread = true
         }
